@@ -1,0 +1,17 @@
+{% extends 'blog/base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+    
+    {% if action == 1 %}
+    	<h2>Edit post</h2>
+    {% else %}
+    	<h2>New post</h2>
+    {% endif %}
+    
+    <form method="POST" class="post-form">
+        {% csrf_token %}
+        {{ form|crispy  }}
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>
+    <a class="btn btn-info" href="{% url 'post_list' %}">Cancel</a>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "blog/base.html" %}
+{% load crispy_forms_tags %}
+	{% block content %}
+
+		<div class="profile">
+	      <h2 class="account-heading">{{user.username}}</h2>
+	      <p>{{user.email}}</p>
+	 	<form method="POST">
+	 		{% csrf_token %}
+	 		{{u_form|crispy}}
+	 		{{p_form|crispy}}
+
+	    <a href="{% url 'profile' %}"><button type="submit" class="edit btn btn-outline">Save Changes</button>	
+	 	</form>
+
+	 	<a href="{% url 'profile' %}"><button class="btn btn-info">Back to Profile</button></a>
+	    </a>
+	    </div>
+	{% endblock %}

@@ -1,0 +1,27 @@
+     {% extends 'blog/base.html' %}
+
+{% block content %}
+
+    {% for post in posts %}            
+        <div class="media container">
+            <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
+            <span>
+                <h4>Author: <a href="#">{{ post.author }}</a></h4>
+            </span>
+            
+            <p>{{ post.text|linebreaksbr }}</p>
+            <div class="date">
+                
+                <div class="created_date">
+                    Created: {{ post.created_date|date:"D N j, Y" }}
+                </div>
+                <div class="published_date">
+                    Published: {{ post.published_date|date:"D N j, Y" }}
+                </div>
+                
+            </div>
+        </div>
+        
+    {% endfor %}
+{% endblock %}
+   

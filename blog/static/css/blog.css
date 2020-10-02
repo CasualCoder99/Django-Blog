@@ -1,0 +1,107 @@
+
+.page-header {
+    background-color: black;
+    margin-top: 0;
+    padding: 90px 20px 20px 40px;
+}
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color: #ffffff;
+    font-size: 40pt;
+    text-decoration: none;
+}
+
+.content {
+      background: lightblue;
+  padding: 10px 10px;
+  margin-bottom: 20px;
+  width: 70%;
+}
+.media {
+      background: #ffffff;
+  border: 2px solid #dddddd;
+  border-radius: 8px;
+  width: auto;
+  padding: 30px;
+  padding-top: 5px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Source Sans Pro',sans-serif;
+    color: black;
+    font-style: bold;
+}
+
+.date {
+    color: darkblue;
+}
+
+.save {
+    float: right;
+
+}
+
+.post-form textarea, .post-form input {
+    width: 100%;
+}
+
+
+.post h2 a, .post h2 a:visited {
+    color: #000000;
+
+}
+
+.post h4 , .post h4 :visited {
+    color: darkblue;
+
+
+}
+
+body{
+    background-color: lightblue;
+    opacity: .8;
+}
+ 
+.delete{
+    padding: 10px;
+    float: right;
+    margin-right: 20px;
+}
+
+.edit,.trash{
+    padding: 10px;
+    float: right;
+    margin-right: 20px;
+}
+
+.navbar-nav {
+  float: right;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar-nav a.btn{
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 17px;
+}
+.add-btn{
+    font-size: 20pt;
+}
+.login {
+    float: right;
+    padding: 30px;
+}
+
+.home {
+    float:left;
+    padding-top: 30px;
+    margin-left: 0px;
+}
+
+.profile.edit {
+    float: right;
+    padding: 30px;  
+}
+
