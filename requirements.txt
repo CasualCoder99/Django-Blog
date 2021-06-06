@@ -20,7 +20,7 @@ kivy.deps.sdl2==0.1.17
 lxml==4.5.2
 openpyxl==2.5.1
 Pillow==5.0.0
-Pygments==2.2.0
+Pygments==2.7.4
 pypiwin32==223
 pytz==2020.1
 pywin32==223
