@@ -24,7 +24,7 @@ Pygments==2.7.4
 pypiwin32==223
 pytz==2020.1
 pywin32==223
-requests==2.18.4
+requests==2.20.0
 selenium==3.11.0
 Send2Trash==1.5.0
 six==1.11.0
